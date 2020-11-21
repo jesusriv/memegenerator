@@ -1,13 +1,12 @@
 import Wrapper from './Wrapper';
 import CaptionWrapper from './CaptionWrapper';
 
-const Caption = ({ toggleSearch, toggleTheme, bottomInput, topInput, top, bottom }) => {
-  
+const Caption = ({ view, toggleTheme, bottomInput, topInput, top, bottom }) => {
 
   return (
     <Wrapper>
       <CaptionWrapper>
-        Caption Your Meme
+        <h1>Caption Your Meme</h1>
           <div id="outer">
           <div id="left">
             <label>Top:</label>
@@ -40,7 +39,7 @@ const Caption = ({ toggleSearch, toggleTheme, bottomInput, topInput, top, bottom
               <label for="dark">Dark</label>
             </p>
 
-            <img onClick={() => toggleSearch()} src="https://www.flaticon.com/svg/static/icons/svg/109/109617.svg" />
+            <img onClick={() => view()} src="https://www.flaticon.com/svg/static/icons/svg/109/109617.svg" alt="arrow" />
           </form>
         </div>
 

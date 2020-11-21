@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 
 const CaptionContainer = styled.div`
-  color: #615220;  
-  font-size: 18px;
-  font-weigh: 500;
-  text-align: center;
   padding: 25px;
   display: flex;
   flex-direction: column;
